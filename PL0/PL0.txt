@@ -1,0 +1,24 @@
+const int Seconds_Per_Minutes := 60;
+int a, b, c, i := 10;
+
+procedure sum(int a, int b);
+begin
+	write (a + b);
+end
+
+begin
+	read (a, b);
+	c := 3 + 5 * (a + b);
+	
+	if c > 5 then
+		call sum(a, b);
+	else if c < 20 then
+	begin
+		c := 20;
+		write(a, b, c);
+	end
+	else
+		write(0);
+	
+		
+end.

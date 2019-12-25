@@ -1,0 +1,14 @@
+Debug/
+Release/
+x64/
+.git/
+.vs/
+*.vcxproj.user
+*.ilk
+*.iobj
+*.ipdb
+*.pdb
+*.exp
+*.lib
+*.lastcodeanalysissucceeded
+*.exe

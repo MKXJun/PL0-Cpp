@@ -1,0 +1,15 @@
+﻿//
+// 递归测试
+//
+
+int times;
+procedure testRecursion(int times);
+begin
+    if (times <= 0) then return;
+    call testRecursion(times - 1);
+    write(times);
+end;
+
+begin
+    call testRecursion(5);
+end.

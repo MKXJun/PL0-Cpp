@@ -1,0 +1,60 @@
+﻿// *********************
+// 条件语句测试
+//
+int a, b;
+begin
+    a := 3;
+    b := 5;
+    //
+    // if
+    //
+    if (a > 4) then
+    begin
+        b := 7;
+    end;
+    
+    //
+    // if else
+    //
+    if (a > 2) then
+        b := 8
+    else
+    begin
+        a := 3
+    end;
+    
+    //
+    // if else-if
+    //
+    if (a > 4) then
+        b := 8
+    else if a < 2 then
+    begin
+        a := 3
+    end;
+
+    //
+    // if else-if else
+    //
+    if (a > 4) then
+        b := 8
+    else if a < 2 then
+    begin
+        a := 3
+    end
+    else
+        write(a, b);
+    
+    //
+    // if else-if else-if
+    //
+    if a > 6 + 4 then
+        b := 8
+    else if a < 2 then
+    begin
+        a := 3
+    end
+    else if a = 3 then
+        write(b, a)
+    
+end.

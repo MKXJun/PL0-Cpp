@@ -1,0 +1,19 @@
+// *********************
+// º”ºı≥À≥˝”‡∫Û∏≥÷µ≤‚ ‘
+//
+int a, b;
+begin
+    a := 5;
+    a += 4;
+    write(a);
+    a -= 3;
+    write(a);
+    a *= 6;
+    write(a);
+    a /= 9;
+    write(a);
+    a %= 3;
+    write(a);
+    a += 3 * 4;
+    write(a);
+end.

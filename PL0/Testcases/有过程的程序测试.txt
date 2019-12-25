@@ -1,0 +1,19 @@
+int a, b, c;
+
+procedure output(int a, int b);
+write(a, b);
+
+
+procedure swapAB();
+begin
+    c := a;
+    a := b;
+    b := c;
+end;
+
+begin
+    a := 3;
+    b := 5;
+    call swapAB();
+    call output(a, b);
+end.

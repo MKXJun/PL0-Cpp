@@ -1,0 +1,11 @@
+﻿int i, sum, times;
+// 计算1+2+3+...+times
+begin
+    sum := 0;
+    read(times);
+    for i := 1 step 1 until i > times do
+    begin
+        sum += i;
+    end;
+    write(sum);
+end.

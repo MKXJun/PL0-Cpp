@@ -1,0 +1,39 @@
+﻿//
+// 短路测试
+//
+int a, b;
+begin
+    a := 3;
+    b := 5;
+    // false && false
+    if a > 4 && b > 5 then
+        write(1);
+    // false && true
+    if a > 4 && b > 4 then
+        write(2);
+    // true && false
+    if a > 2 && b > 5 then
+        write(3);
+    // true && true
+    if a > 2 && b > 3 then
+        write(4);
+        
+    // false || false
+    if a > 4 || b > 5 then
+        write(5);
+    // false || true
+    if a > 4 || b > 4 then
+        write(6);
+    // true || false
+    if a > 2 || b > 5 then
+        write(7);
+    // true || true
+    if a > 2 || b > 3 then
+        write(8);
+
+    if a <= b || a > 3 && b <= 4 then
+        write(9);
+    if a + 3 > b && (a - 3 > b || b >= 0) then
+        write(10);
+    
+end.

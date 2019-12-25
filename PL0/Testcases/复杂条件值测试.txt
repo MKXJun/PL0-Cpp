@@ -1,0 +1,19 @@
+﻿//
+// 复杂条件值测试
+//
+int a, b;
+
+begin
+    a := 3;
+    b := 5;
+    if a > b && a > 5 then write(1);
+    if a < b || a > 5 then write(2);
+    if a <= b || a > 3 && b <= 4 then write(3);
+    if a != b && b != a || a = b && b = a then write(4);
+    if a + 3 > b && (a - 3 < b || b >= 0) then write(5);
+    if !(a > b) then write(6);
+    if !(a > b && b > 0) then write(7);
+    if !(a < b) || !(a = 3) then write(8);
+    if !(!(!(!(!(-a + b > 0))))) then write(9);
+    if (a = b || a - (-b) > 3) && (b >= 4 || a <= 5) then write(10);
+end.
